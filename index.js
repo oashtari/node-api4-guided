@@ -1,3 +1,12 @@
+require('dotenv').config();
+// yarn add dotenv
+// will read from a .env file located at the root of the project
+// that is why it is as early as possible in the index.js folder
+// but we don't have the .env in the root folder yet
+// .env is ignore in gitignore
+// add .env at root level
+// and merge the key/value pairs into process.env
+// executing the line above will read the files in .env file
 const server = require("./api/server.js");
 
 
@@ -20,3 +29,6 @@ server.listen(port, () => {
 // 4. can do manual deploy, will get an error, go to the 'More' menu, view logs
 // 5. can add remote repo location with "git remote add (repo name)"
 // 6. git push (origin) master, the origin is the place where you want to push, so it can be (repo name)
+// 7. find errors, fix them, get deployed
+
+// 
