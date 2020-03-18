@@ -6,8 +6,12 @@ const router = express.Router();
 
 router.use(express.json());
 
+// CHANGES
 // process.env has all the info about the environment
 // the OS and admins can add things to this environment
+// add const environment
+// add const port
+// both are parameters in the json object now
 
 router.get("/", (req, res) => {
   const environment = process.env;
